@@ -1,2 +1,7 @@
+const offset = 0
+const limit = 10
+const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
 
-console.log('Sucesso!')
+fetch(url).then(function (response){
+    console(response)
+})
