@@ -4,14 +4,49 @@
 }
 
 body {
-    background-color: #f6f8fc;
+    background-attachment: fixed;
+    background-image: url('/assets/img/background.png');
+    background-size: cover
 }
 
-.content {
-    width: 100vw;
-    height: 100vh;
+
+header {
+    background-color: #333;
     padding: 1rem;
-    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-right: 1rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    color: aliceblue;
 }
 
 @media screen and (min-width: 992px) {
