@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- Metadata section -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,19 +18,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     
-    <!-- Font   Rubik Glitch  -->
+    <!-- Font Rubik Doodle Shadow -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
 
-    <!-- Nosso CSS -->
+    <!-- External CSS links -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
 </head>
 
 <body>
+    <!-- Header section -->
     <header>
         <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        <!-- Navigation section -->
         <nav class="nav-menu">
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -39,13 +42,16 @@
         </nav>
     </header>
 
+    <!-- Main content section -->
     <section class="content">
         <h1>Pokedex</h1>
 
+        <!-- Pokemon list container -->
         <ol id="pokemonList" class="pokemons">
 
         </ol>
 
+        <!-- Pagination controls -->
         <div class="pagination">
             <button id="loadMoreButton" type="button">
                 Load More
@@ -54,12 +60,12 @@
 
     </section>
 
+    <!-- Footer section -->
     <footer>
         <p>Created by Jacqueline Atae - Consuming PokeAPI - Last Update January, 2024.</p>
     </footer>
-    
 
-    <!-- Nosso JS -->
+    <!-- JavaScript script tags -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
