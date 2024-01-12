@@ -56,17 +56,19 @@ function openPopup(pokemonId) {
             const popupContent = `
                 <div class="popup-container custom-popup">
                     <button class="close-button">&times;</button>
+                    <span class="number">#${pokemon.number}</span>
                     <img src="${pokemon.photo}" alt="${pokemon.name}" class="popup-image">
                     <div class="popup-details">
-                        <span class="number">#${pokemon.number}</span>
                         <span class="name">${pokemon.name}</span>
                         <div class="detail">
                             <ol class="types">
                                 ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
                             </ol>
-                            <p><strong>Height:</strong> ${pokemon.height} dm</p>
-                            <p><strong>Weight:</strong> ${pokemon.weight} hectograms</p>
-                            <p><strong>Abilities:</strong> ${pokemon.abilities.join(', ')}</p>
+                            <div class="description">
+                                <p><strong>Height:</strong> ${pokemon.height} dm</p>
+                                <p><strong>Weight:</strong> ${pokemon.weight} hectograms</p>
+                                <p><strong>Abilities:</strong> ${pokemon.abilities.join(', ')}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
